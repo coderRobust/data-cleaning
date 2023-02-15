@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Cleaning Website</title>
+  </head>
+  <body>
+    <h1>Data Cleaning Website</h1>
+    <form method="post" action="/clean">
+      <textarea name="text" rows="10" cols="50"></textarea>
+      <br />
+      <button type="submit">Clean Text</button>
+    </form>
+    <br />
+    {% if cleaned_text %}
+    <h2>Cleaned Text:</h2>
+    <p>{{ cleaned_text }}</p>
+    {% endif %}
+  </body>
+</html>
